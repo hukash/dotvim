@@ -14,6 +14,6 @@ set guioptions=-bB                 " Don't show bottom scrollbar
 
 let mapleader=","
 
-nmap <Leader>f :set co=180<CR>:set lines=49<CR> 
+nmap <Leader>f :set co=159<CR>:set lines=49<CR> 
 " Resize to default size
 nmap <Leader>n :set co=120<CR>:set lines=49<CR>:winpos 150 778<CR> 
