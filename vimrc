@@ -59,6 +59,9 @@ colorscheme ir_black
 " Syntax highlightning for JSON
 au BufRead,BufNewFile *.json set filetype=json
 
+" Save when losing focus "
+au FocusLost * :wa
+
 " Make <c-l> clear the highlight as well as redraw
 nnoremap <C-L> :nohls<CR><C-L>
 inoremap <C-L> <C-O>:nohls<CR
