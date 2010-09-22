@@ -6,7 +6,6 @@ set modelines=0                   " Turn off modelines for security
 
 silent! call pathogen#runtime_append_all_bundles()
 runtime macros/matchit.vim        " Load the matchit plugin.
-
 syntax enable                     " Turn on syntax highlighting.
 filetype plugin indent on         " Turn on file type detection.
 
@@ -14,11 +13,8 @@ set encoding=utf-8
 set showcmd                       " Display incomplete commands.
 set showmode                      " Display the mode you're in.
 set autoindent
-
 set backspace=indent,eol,start    " Intuitive backspacing.
-
 set hidden                        " Handle multiple buffers better.
-
 set wildmenu                      " Enhanced command line completion.
 set wildmode=list:longest         " Complete files like a shell.
 " Stuff to ignore when tab completing
@@ -38,7 +34,7 @@ set smartcase                     " But case-sensitive if expression contains a 
 set showmatch
 set gdefault
 
-
+" Textformatting
 set wrap                          " Turn on line wrapping.
 set textwidth=79
 set formatoptions=qrn1
