@@ -1,4 +1,5 @@
 *.swp
+*.un~
 *.tmproj
 .DS_Store
 vim/.netrwhist
