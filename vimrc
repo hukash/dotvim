@@ -20,8 +20,8 @@ set wildmode=list:longest         " Complete files like a shell.
 " Stuff to ignore when tab completing
 set wildignore=*.o,*.obj,*~,*.pyc,*.bak,*.exe,.DS_Store,*.db
 
-"set number                       " Show line numbers.
-set relativenumber                " Set number relative to current line
+set number                       " Show line numbers.
+" set relativenumber                " Set number relative to current line
 set ruler                         " Show cursor position.
 set cursorline                    " Highlight current line.
 set scrolloff=3                   " Show 3 lines of context around the cursor.
@@ -38,7 +38,7 @@ set gdefault
 set wrap                          " Turn on line wrapping.
 set textwidth=79
 set formatoptions=qrn1
-set colorcolumn=85
+" set colorcolumn=85
 set title                         " Set the terminal's title
 
 set visualbell                    " No beeping.
@@ -46,7 +46,7 @@ set ttyfast
 set nobackup                      " Don't make a backup before overwriting a file.
 set nowritebackup                 " And again.
 set directory=$HOME/.vim/tmp//,.  " Keep swap files in one location
-set undofile
+" set undofile
 
 " Indent settings
 set tabstop=2                     " Global tab width.
