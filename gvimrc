@@ -1,7 +1,7 @@
 " Vim graphical configuration.
 " Copy to ~/.gvimrc or ~/_gvimrc.
 
-set guifont=Consolas\ 13          " Font family and font size.
+set guifont=Consolas:h13          " Font family and font size.
 set antialias                     " MacVim: smooth fonts.
 set background=dark               " Background.
 colorscheme molokai               " overwrite terminal colorscheme
