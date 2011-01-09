@@ -38,7 +38,7 @@ set gdefault
 set wrap                          " Turn on line wrapping.
 set textwidth=79
 set formatoptions=qrn1
-set colorcolumn=85
+" set colorcolumn=85
 set title                         " Set the terminal's title
 
 set visualbell                    " No beeping.
