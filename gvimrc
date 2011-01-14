@@ -4,7 +4,7 @@
 set guifont=Menlo:h12             " Font family and font size.
 set antialias                     " MacVim: smooth fonts.
 set background=dark               " Background.
-colorscheme cloud_midnight        " overwrite terminal colorscheme
+colorscheme lucius                " overwrite terminal colorscheme
 set lines=50 columns=120          " Window dimensions.
 set guioptions-=T                 " Hide toolbar.
 set guioptions-=lL                " Don't show left scrollbar
