@@ -1,7 +1,7 @@
 " Vim graphical configuration.
 " Copy to ~/.gvimrc or ~/_gvimrc.
 
-set guifont=Inconsolata:h14             " Font family and font size.
+set guifont=Menlo:h13             " Font family and font size.
 set antialias                     " MacVim: smooth fonts.
 set background=dark               " Background.
 colorscheme lucius                " overwrite terminal colorscheme

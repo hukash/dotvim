@@ -1,6 +1,7 @@
 *.swp
 *.un~
 *.tmproj
+*.pyc
 .DS_Store
 vim/.netrwhist
 vim/tmp
