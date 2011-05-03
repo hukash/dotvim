@@ -1,2 +1,2 @@
-set tabstop=2                     " Global tab width.
-set shiftwidth=2                  " And again, related.
+setlocal tabstop=2                     " HTML tab width.
+setlocal shiftwidth=2                  " And again, related.
