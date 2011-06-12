@@ -2,8 +2,9 @@
 " Copy to ~/.gvimrc or ~/_gvimrc.
 
 set guifont=Menlo:h13             " Font family and font size.
+" set guicursor=n-v-s:ver10       " Vertical bar cursor
 set antialias                     " MacVim: smooth fonts.
-set background=light              " Background.
+set background=dark               " Background.
 colorscheme solarized             " overwrite terminal colorscheme
 set lines=50 columns=120          " Window dimensions.
 set guioptions-=T                 " Hide toolbar.
