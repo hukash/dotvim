@@ -1,7 +1,7 @@
 " Vim graphical configuration.
 " Copy to ~/.gvimrc or ~/_gvimrc.
 
-set guifont=Menlo:h13             " Font family and font size.
+set guifont=Menlo:h11             " Font family and font size.
 " set guicursor=n-v-s:ver10       " Vertical bar cursor
 set antialias                     " MacVim: smooth fonts.
 set background=dark               " Background.
@@ -9,8 +9,11 @@ colorscheme solarized             " overwrite terminal colorscheme
 set lines=50 columns=120          " Window dimensions.
 set guioptions-=T                 " Hide toolbar.
 set guioptions-=lL                " Don't show left scrollbar
-set guioptions-=rR                " Don't show right scrollbar
-set guioptions=-bB                " Don't show bottom scrollbar
+set guioptions-=L                " Don't show left scrollbar
+set guioptions-=r                " Don't show right scrollbar
+set guioptions-=R                " Don't show right scrollbar
+set guioptions-=b                " Don't show bottom scrollbar
+set guioptions-=B                " Don't show bottom scrollbar
 
 " Resize to fullscreen
 nmap <Leader>f :set co=180<CR>:set lines=52<CR> 

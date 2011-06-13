@@ -34,10 +34,6 @@ set smartcase                     " But case-sensitive if expression contains a 
 set showmatch
 set gdefault
 
-" Textformatting
-set wrap                          " Turn on line wrapping.
-set textwidth=79
-set formatoptions=qrn1
 " set colorcolumn=85
 set title                         " Set the terminal's title
 
@@ -48,8 +44,15 @@ set nowritebackup                 " And again.
 set directory=$HOME/.vim/tmp/.     " Keep swap files in one location
 " set undofile
 
-" Indent settings
+" Textformating and Indent settings
+set wrap
+set wrapmargin=2
+set softtabstop=4 
+set tabstop=4 
+set shiftwidth=4 
+set textwidth=79
 set expandtab                     " Use spaces instead of tabs
+set formatoptions=qrn1
 
 " Status line
 set laststatus=2                  " Show the status line all the time
@@ -93,7 +96,7 @@ let g:bufExplorerShowRelativePath=1
 
 " NERD_Tree
 nmap <silent> <c-n> :NERDTreeToggle<CR>
-let NERDTreeIgnore=['.vim$', '\~$'] 
+let NERDTreeIgnore=['.pyc', '\~$'] 
 
 " Automatic fold settings for specific files. Uncomment to use.
 " autocmd FileType ruby set foldmethod=syntax
