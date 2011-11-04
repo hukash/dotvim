@@ -1,12 +1,13 @@
 " Vim graphical configuration.
 " Copy to ~/.gvimrc or ~/_gvimrc.
 
-set guifont=Menlo:h11             " Font family and font size.
+set guifont=Menlo:h12             " Font family and font size.
 " set guicursor=n-v-s:ver10       " Vertical bar cursor
 set antialias                     " MacVim: smooth fonts.
 set background=dark               " Background.
-colorscheme solarized             " overwrite terminal colorscheme
-set lines=50 columns=120          " Window dimensions.
+colorscheme molokai             " overwrite terminal colorscheme
+" colorscheme topfunky-light      " overwrite terminal colorscheme
+set lines=51 columns=120          " Window dimensions.
 set guioptions-=T                 " Hide toolbar.
 set guioptions-=lL                " Don't show left scrollbar
 set guioptions-=L                " Don't show left scrollbar
