@@ -23,7 +23,7 @@ set wildignore=*.o,*.obj,*~,*.pyc,*.bak,*.exe,.DS_Store,*.db
 " set number                       " Show line numbers.
 set relativenumber                " Set number relative to current line
 set ruler                         " Show cursor position.
-set cursorline                    " Highlight current line.
+" set cursorline                    " Highlight current line.
 set scrolloff=3                   " Show 3 lines of context around the cursor.
 
 " Searching
