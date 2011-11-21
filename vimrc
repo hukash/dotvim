@@ -24,7 +24,7 @@ set wildignore=*.o,*.obj,*~,*.pyc,*.bak,*.exe,.DS_Store,*.db
 set relativenumber                " Set number relative to current line
 set ruler                         " Show cursor position.
 " set cursorline                    " Highlight current line.
-set scrolloff=3                   " Show 3 lines of context around the cursor.
+set scrolloff=5                   " Show 3 lines of context around the cursor.
 
 " Searching
 set incsearch                     " Highlight matches as you type.
@@ -41,7 +41,7 @@ set visualbell                    " No beeping.
 set ttyfast
 set nobackup                      " Don't make a backup before overwriting a file.
 set nowritebackup                 " And again.
-set directory=$HOME/.vim/tmp/.     " Keep swap files in one location
+set directory=$HOME/.vim/tmp/.    " Keep swap files in one location
 " set undofile
 
 " Textformating and Indent settings
