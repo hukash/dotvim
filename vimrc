@@ -20,10 +20,10 @@ set wildmode=list:longest         " Complete files like a shell.
 " Stuff to ignore when tab completing
 set wildignore=*.o,*.obj,*~,*.pyc,*.bak,*.exe,.DS_Store,*.db
 
-" set number                       " Show line numbers.
+" set number                      " Show line numbers.
 set relativenumber                " Set number relative to current line
 set ruler                         " Show cursor position.
-" set cursorline                    " Highlight current line.
+" set cursorline                  " Highlight current line.
 set scrolloff=5                   " Show 3 lines of context around the cursor.
 
 " Searching
@@ -86,6 +86,9 @@ map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
+
+" get rid of search highlight in vim
+:nnoremap <silent> <C-l> :noh<CR>
 
 " Bufexplorer
 nnoremap <C-B> :BufExplorer<CR> " Map to bufexplorer
