@@ -92,6 +92,12 @@ augroup line_return
         \ endif
 augroup END
 
+" Easy buffer navigation between windows
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>
+
 " Adding shorcuts keys using leader key.
 ",W Command to remove white space from a file.
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
