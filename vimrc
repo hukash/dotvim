@@ -96,7 +96,7 @@ augroup END
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
-map <C-l> <C-w>
+map <C-l> <C-w>l
 
 " Adding shorcuts keys using leader key.
 ",W Command to remove white space from a file.
