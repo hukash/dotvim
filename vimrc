@@ -116,6 +116,10 @@ autocmd bufwritepost .vimrc source ~/.vimrc
 
 " =========== END Basic Vim Settings ===========
 
+" ========== Plugin Settings =========="
+" Powerline settings
+let g:Powerline_symbols = 'fancy'
+
 " =========== Gvim Settings =============
 
 " Removing scrollbars
@@ -127,11 +131,10 @@ if has("gui_running")
     set guioptions-=R
     set guioptions+=a
     set guioptions+=m
-    set guifont=Menlo:h12 
+    set guifont=Inconsolata-dz\ for\ Powerline:h13
     set listchars=tab:▸\ ,eol:¬         " Invisibles using the Textmate style
+    colorscheme badwolf
 endif
 
 " ========== END Gvim Settings ==========
-
-" ========== Plugin Settings =========="
 
