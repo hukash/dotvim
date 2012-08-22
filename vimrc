@@ -122,10 +122,6 @@ autocmd bufwritepost .vimrc source ~/.vimrc
 
 " =========== END Basic Vim Settings ===========
 
-" ========== Plugin Settings =========="
-" Powerline settings
-let g:Powerline_symbols = 'fancy'
-
 " =========== Gvim Settings =============
 
 " Removing scrollbars
@@ -143,4 +139,11 @@ if has("gui_running")
 endif
 
 " ========== END Gvim Settings ==========
+
+" ========== Plugin Settings =========="
+" Powerline settings
+let g:Powerline_symbols = 'fancy'
+
+" NERD Tree settings
+nnoremap <C-n> :NERDTreeToggle<cr>
 
