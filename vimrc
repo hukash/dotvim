@@ -117,14 +117,17 @@ nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
 " jj For Qicker Escaping between normal and editing mode.
 inoremap jj <ESC>
 
+" Filetype settings
+autocmd Filetype html setlocal ts=2 sts=2 sw=2
+autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
+autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
+
 " Source the vimrc file after saving it
-autocmd bufwritepost .vimrc source ~/.vimrc
+autocmd bufwritepost vimrc source ~/.vimrc
 
 " =========== END Basic Vim Settings ===========
 
 " =========== Gvim Settings =============
-
-" Removing scrollbars
 if has("gui_running")
     set guitablabel=%-0.12t%M
     set guioptions-=T
@@ -137,7 +140,6 @@ if has("gui_running")
     set listchars=tab:▸\ ,eol:¬         " Invisibles using the Textmate style
     colorscheme badwolf
 endif
-
 " ========== END Gvim Settings ==========
 
 " ========== Plugin Settings =========="
@@ -146,4 +148,7 @@ let g:Powerline_symbols = 'fancy'
 
 " NERD Tree settings
 nnoremap <C-n> :NERDTreeToggle<cr>
+
+" Tagbar
+nmap <F8> :TagbarToggle<CR>
 
