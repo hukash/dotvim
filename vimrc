@@ -136,7 +136,7 @@ if has("gui_running")
     set guioptions-=R
     set guioptions+=a
     set guioptions+=m
-    set guifont=Inconsolata-dz\ for\ Powerline:h13
+    set guifont=Inconsolata-dz\ for\ Powerline:h12
     set listchars=tab:▸\ ,eol:¬         " Invisibles using the Textmate style
     colorscheme badwolf
 endif
