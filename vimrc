@@ -2,6 +2,8 @@
 
 " Pathogen settings.
 call pathogen#infect()
+" Load GO vim files
+set rtp+=$GOROOT/misc/vim
 syntax on
 filetype plugin indent on
 
@@ -19,16 +21,17 @@ set hidden
 set wildmenu
 set wildmode=list:longest
 set visualbell
-set cursorline
+" set cursorline
 set ttyfast
 set ruler
+set number
 set backspace=indent,eol,start
 set laststatus=2
 
 " Set title to window
 set title
 
-"TAB settings.
+" TAB settings.
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
@@ -41,14 +44,21 @@ let mapleader = ","
 set wrap
 set textwidth=79
 set formatoptions=qrn1
-set colorcolumn=80
+"set colorcolumn=80
 
 " To  show special characters in Vim
-"set list
-set listchars=tab:▸\ ,eol:¬
+set list
+set listchars=tab:▸\ ,trail:·
+
+color badwolf
 
 " Set vim to save the file on focus out.
 au FocusLost * :wa
+
+" Directories for swp files
+set backupdir=~/.vimbackup
+set directory=~/.vimbackup
+
 
 " Working with split screen nicely
 " Resize Split When the window is resized"
@@ -72,7 +82,7 @@ set pastetoggle=<F3>
 " Enable Mouse
 set mouse=a
 
-"Settings for Searching and Moving
+" Settings for Searching and Moving
 nnoremap / /\v
 vnoremap / /\v
 set ignorecase
@@ -81,7 +91,21 @@ set gdefault
 set incsearch
 set showmatch
 set hlsearch
-nnoremap <leader><space> :noh<cr>
+
+" Map Ctrl+l to clear highlighted searches
+nnoremap <silent> <C-s> :<C-u>nohlsearch<CR><C-0>
+
+" Strip trailing whitespaces on each save
+fun! <SID>StripTrailingWhitespaces()
+    let l = line(".")
+    let c = col(".")
+    %s/\s\+$//e
+    call cursor(l, c)
+endfun
+autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
+
+" Highlight characters behind the 80 chars margin
+" :au BufWinEnter * let w:m2=matchadd('ColumnMargin', '\%>80v.\+', -1)
 
 " Make Sure that Vim returns to the same line when we reopen a file"
 augroup line_return
@@ -118,33 +142,22 @@ nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
 inoremap jj <ESC>
 
 " Filetype settings
-autocmd Filetype html setlocal ts=2 sts=2 sw=2
-autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
-autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
+au Filetype html setlocal ts=2 sts=2 sw=2
+au Filetype ruby setlocal ts=2 sts=2 sw=2
+au Filetype javascript setlocal ts=2 sts=2 sw=2
+" add json syntax highlighting
+au BufNewFile,BufRead *.json set ft=javascript
+" Disable code folding
+set nofoldenable
 
 " Source the vimrc file after saving it
-autocmd bufwritepost vimrc source ~/.vimrc
+au bufwritepost vimrc source ~/.vimrc
 
 " =========== END Basic Vim Settings ===========
 
-" =========== Gvim Settings =============
-if has("gui_running")
-    set guitablabel=%-0.12t%M
-    set guioptions-=T
-    set guioptions-=r
-    set guioptions-=L
-    set guioptions-=R
-    set guioptions+=a
-    set guioptions+=m
-    set guifont=Inconsolata-dz\ for\ Powerline:h12
-    set listchars=tab:▸\ ,eol:¬         " Invisibles using the Textmate style
-    colorscheme badwolf
-endif
-" ========== END Gvim Settings ==========
-
 " ========== Plugin Settings =========="
 " Powerline settings
-let g:Powerline_symbols = 'fancy'
+" let g:Powerline_symbols = 'fancy'
 
 " NERD Tree settings
 nnoremap <C-n> :NERDTreeToggle<cr>
